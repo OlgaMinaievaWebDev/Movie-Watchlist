@@ -65,3 +65,26 @@ input[type="text"] {
   padding: 0.5em 1em;
   font-size: 1rem;
 }
+
+
+/* main */
+main {
+ margin-top: 20px;
+}
+
+.clear-height {
+  height: calc(100vh - 30vh - 20px);
+}
+
+
+.clear-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  height: 100%;
+  color: #dfdddd;
+  font-weight: 700;
+}
