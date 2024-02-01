@@ -69,7 +69,7 @@ input[type="text"] {
 
 /* main */
 main {
- margin-top: 20px;
+ margin-top: 40px;
 }
 
 .clear-height {
@@ -87,4 +87,25 @@ main {
   height: 100%;
   color: #dfdddd;
   font-weight: 700;
+}
+
+/* movie poster div */
+.movie-card {
+ border-bottom: 1px solid #6b7280;
+ width: 70%;
+ margin: 1em auto;
+ display: flex;
+}
+.left {
+ width: 30%;
+}
+.right {
+ display: flex;
+ flex-direction: column;
+ gap: 1em;
+}
+.title, .middle-part {
+ display: flex;
+ align-items: center;
+ gap: 1.5em;
 }
