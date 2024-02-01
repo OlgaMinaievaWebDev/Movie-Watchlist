@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="style.css">
- <title>Movie Watchlist</title>
-</head>
-<body>
- <input type="text" id="userInput">
- <button id="search">Search</button>
- <script src="app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/8d7bb5f562.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Movie Watchlist</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Find your film</h1>
+        <p class="my-watchlist">
+          <a id="my-watchlist" href="watchlist.html"> My Watchlist </a>
+        </p>
+      </header>
+      <nav class="search-bar-container">
+        <i class="icon fa-solid fa-magnifying-glass"></i>
+        <input
+          type="text"
+          name="search"
+          id="search"
+          placeholder="Search for a movie"
+        />
+        <button class="btn" id="search">Search</button>
+      </nav>
+    </div>
+    <script src="app.js"></script>
+    <!-- <i class="fa-solid fa-circle-plus"></i>
+ <i class="fa-solid fa-circle-minus"></i>
+  --></body>
 </html>

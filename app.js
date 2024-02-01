@@ -1,4 +1,4 @@
-let userInput = document.getElementById("userInput");
+let userInput = document.getElementById("search");
 
 document.getElementById("search").addEventListener("click", function () {
   console.log(userInput.value);
