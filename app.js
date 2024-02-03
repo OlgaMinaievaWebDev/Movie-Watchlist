@@ -14,10 +14,15 @@ document.getElementById("searchBtn").addEventListener("click", function () {
      `;
         return;
       } else {
-        movieList.innerHTML = `
-     <p class="results">Able to find what you're looking for. </p> 
-     `;
-        console.log(data.Search);
+       let searchList = data.Search.map(movie => movie.Title)
+       console.log(searchList)
+       for (let i = 0; i < searchList.length; i++){
+        fetch(`https://www.omdbapi.com/?t=${searchList[i]}&apikey=861f8cc7`)
+          .then((res) => res.json())
+          .then((data) => {
+            console.log(data);
+          });
+       }
       }
     });
 });
