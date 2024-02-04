@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+
+
+
 header {
   width: 100%;
   min-height: 200px;
@@ -67,15 +70,12 @@ input[type="text"] {
 }
 
 /* main */
-main {
-  margin-top: 40px;
-}
 
 .clear-height {
   height: calc(100vh - 30vh - 20px);
   padding: 0 1rem;
   max-width: 720px;
-  margin: 40px auto;
+  margin: 30px auto;
   display: flex;
   flex-direction: column;
   gap: 1em;
