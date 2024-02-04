@@ -73,6 +73,12 @@ main {
 
 .clear-height {
   height: calc(100vh - 30vh - 20px);
+  padding: 0 1rem;
+  max-width: 720px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
 .clear-page {
@@ -93,20 +99,18 @@ main {
   width: 100%;
   margin: 1em auto;
   display: flex;
-
-  border: 2px solid red;
+  padding-bottom: 1em;
 }
 .left {
   display: flex;
-  align-items: center;
-  border: 2px solid green;
+  align-items: baseline;
+
 }
 
 img {
   height: 150px;
   max-width: 100px;
   object-fit: cover;
-
   border-radius: 3px;
 }
 
@@ -114,6 +118,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 1em;
+  margin-left: 1em;
 }
 
 .title,
