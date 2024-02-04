@@ -1,7 +1,6 @@
 let userInput = document.getElementById("search");
-let feedHtml = "";
 const movieList = document.getElementById("movie-list-section");
-
+let feedHtml = "";
 document.getElementById("searchBtn").addEventListener("click", function () {
   //first fetch titles of movies
   fetch(
@@ -22,7 +21,28 @@ document.getElementById("searchBtn").addEventListener("click", function () {
           fetch(`https://www.omdbapi.com/?t=${searchList[i]}&apikey=861f8cc7`)
             .then((res) => res.json())
             .then((data) => {
-              console.log(data.imdbRating, data.Genre);
+              feedHtml += `
+        <div class="movie-card">
+            <div class="left">
+               <img src="${data.Poster}" class="poster" />
+            </div>
+        <div class="right">
+          <div class="title">
+            <h3>${data.Title}</h3>
+            <p>${data.imdbRating}</p>
+          </div>
+          <div class="middle-part">
+            <p>${data.Runtime}</p>
+            <p>${data.Genre}</p>
+            <p>Whatchlist</p>
+          </div>
+          <div class="description">
+            <p>${data.Plot}</p>
+          </div>
+        </div>
+      </div>
+              `;
+              movieList.innerHTML = feedHtml;
             });
         }
       }

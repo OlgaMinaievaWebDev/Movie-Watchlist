@@ -66,16 +66,14 @@ input[type="text"] {
   font-size: 1rem;
 }
 
-
 /* main */
 main {
- margin-top: 40px;
+  margin-top: 40px;
 }
 
 .clear-height {
   height: calc(100vh - 30vh - 20px);
 }
-
 
 .clear-page {
   display: flex;
@@ -91,21 +89,36 @@ main {
 
 /* movie poster div */
 .movie-card {
- border-bottom: 1px solid #6b7280;
- width: 70%;
- margin: 1em auto;
- display: flex;
+  border-bottom: 1px solid #6b7280;
+  width: 100%;
+  margin: 1em auto;
+  display: flex;
+
+  border: 2px solid red;
 }
 .left {
- width: 30%;
+  display: flex;
+  align-items: center;
+  border: 2px solid green;
 }
+
+img {
+  height: 150px;
+  max-width: 100px;
+  object-fit: cover;
+
+  border-radius: 3px;
+}
+
 .right {
- display: flex;
- flex-direction: column;
- gap: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
-.title, .middle-part {
- display: flex;
- align-items: center;
- gap: 1.5em;
+
+.title,
+.middle-part {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
 }
