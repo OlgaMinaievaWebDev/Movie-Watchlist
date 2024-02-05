@@ -4,9 +4,6 @@
   box-sizing: border-box;
 }
 
-
-
-
 header {
   width: 100%;
   min-height: 200px;
@@ -51,6 +48,7 @@ header a {
 }
 
 input[type="text"] {
+  width: 100%;
   padding: 0.5em 1em;
   font-size: 1rem;
   color: #6b7280;
@@ -104,7 +102,6 @@ input[type="text"] {
 .left {
   display: flex;
   align-items: baseline;
-
 }
 
 img {
