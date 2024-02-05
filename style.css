@@ -67,6 +67,7 @@ input[type="text"] {
   font-size: 1rem;
 }
 
+
 /* main */
 
 .clear-height {
@@ -95,6 +96,7 @@ input[type="text"] {
 .movie-card {
   border-bottom: 1px solid #6b7280;
   width: 100%;
+
   margin: 1em auto;
   display: flex;
   padding-bottom: 1em;
@@ -116,11 +118,32 @@ img {
   flex-direction: column;
   gap: 1em;
   margin-left: 1em;
+  padding: 0 1em;
 }
 
 .title,
 .middle-part {
   display: flex;
   align-items: center;
-  gap: 1.5em;
+  gap: 0.5em;
+}
+
+.rating {
+  display: flex;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.add-movie{
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+.btn{
+  background-color: transparent;
+}
+
+.btn:active{
+   transform: translateY(1px);
 }
