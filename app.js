@@ -1,4 +1,4 @@
-const APIKey = "861f8cc7";
+const APIKey = "++++";
 const APIUrl = `https://www.omdbapi.com/?apikey=${APIKey}&type=movie`;
 const searchBar = document.getElementById("search-bar");
 const searchInput = document.getElementById("search");
